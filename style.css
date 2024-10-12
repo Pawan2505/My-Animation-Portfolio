@@ -147,7 +147,7 @@ a {
   color: rgb(231, 231, 231);
 
   bottom: -12%;
-  left: -12%;
+  left: -14%;
   font-weight: bold;
   transition: all 3s;
 }
@@ -823,5 +823,11 @@ footer {
   .footer-faded-text {
     left: 200px;
     font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-pink {
+    width: 285px;
   }
 }
