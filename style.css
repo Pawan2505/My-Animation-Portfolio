@@ -829,5 +829,6 @@ footer {
 @media (max-width: 300px) {
   .btn-pink {
     width: 285px;
+    font-size: 15px;
   }
 }
