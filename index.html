@@ -16,64 +16,71 @@
 
     <div class="container">
       <div class="navbar">
-
         <div class="logo-container">
-          <img src="https://psfonttk.com/wp-content/uploads/2021/07/letra-p-molde-300x200.png" class="logo">
-          <div class="logo-text">ortfolio</div>
+            <img src="https://psfonttk.com/wp-content/uploads/2021/07/letra-p-molde-300x200.png" class="logo">
+            <div class="logo-text">ortfolio</div>
         </div>
 
-        <div class="nav-items">
-          <div><a href="#projects">Projects</a></div>
-          <div><a href="#skills">Skills</a></div>
-          <div><a href="#contactme">Contact Me</a></div>
+        <div class="nav-items" id="navItems">
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#contactme">Contact Me</a></div>
         </div>
 
-      </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
-      <div class="hero-section">
+    <div class="hero-section">
 
-        <div class="faded-text">Pawan Maurya</div>
+      <div class="faded-text">Pawan Maurya</div>
 
-        <div class="hero-section-left">
-          <div class="hero-section-heading">Hi! Pawan Maurya</div>
+      <div class="hero-section-left">
+        <div class="hero-section-heading">Hi! Pawan Maurya</div>
 
-          <div class="hero-section-heading hero-section-sub-heading">
-            I am a <span class="role"></span>
-          </div>
+        <div class="hero-section-heading hero-section-sub-heading">
+          I am a <span class="role"></span>
+        </div>
 
-          <div class="hero-section-description">
-            I’m a software developer and here is my portfolio website. Here you’ll
-            learn about my journey as a software developer.
-          </div>
-          <a href="https://www.linkedin.com/in/pawan2505/">
+        <div class="hero-section-description">
+          I’m a software developer and here is my portfolio website. Here you’ll
+          learn about my journey as a software developer.
+        </div>
+        <div class="btn-hero">
+          <a href="https://www.linkedin.com/in/pawan2505/" >
             <div class="btn-pink" id="btn">Hire me</div>
           </a>
-
-
         </div>
+      
 
-        <div class="hero-section-right">
-          <div class="absolute icons icon-dots">
-            <img src="./images/userAsset/dots.png" alt="" />
-          </div>
-          <div class="absolute icons icon-cube">
-            <img src="./images/userAsset/cube.png" alt="" />
-          </div>
-          <div class="absolute icons icon-circle">
-            <img src="./images/userAsset/circle.png" alt="" />
-          </div>
-          <div class="absolute icons icon-zigzag">
-            <img src="./images/userAsset/zigzags.png" alt="" />
-          </div>
-          <div class="absolute icons icon-plus">
-            <img src="./images/userAsset/plus.png" alt="" />
-          </div>
-          <div class="user-image">
-            <img src="./images/userAsset/PawanMaurya.jpeg" width="300px" height="400px" alt="" />
-          </div>
-        </div>
 
       </div>
+
+      <div class="hero-section-right">
+        <div class="absolute icons icon-dots">
+          <img src="./images/userAsset/dots.png" alt="" />
+        </div>
+        <div class="absolute icons icon-cube">
+          <img src="./images/userAsset/cube.png" alt="" />
+        </div>
+        <div class="absolute icons icon-circle">
+          <img src="./images/userAsset/circle.png" alt="" />
+        </div>
+        <div class="absolute icons icon-zigzag">
+          <img src="./images/userAsset/zigzags.png" alt="" />
+        </div>
+        <div class="absolute icons icon-plus">
+          <img src="./images/userAsset/plus.png" alt="" />
+        </div>
+        <div class="user-image">
+          <img src="./images/userAsset/PawanMaurya.jpeg" width="300px" height="400px" alt="" />
+        </div>
+      </div>
+
+    </div>
     </div>
 
     <div class="project-section" id="projects">
@@ -346,6 +353,13 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
   <script>
+    const hamburger = document.getElementById('hamburger');
+        const navItems = document.getElementById('navItems');
+
+        hamburger.addEventListener('click', () => {
+            navItems.classList.toggle('active');
+        });
+
     var typeData = new Typed(".role", {
       strings: [
         "Full Stack Developer",
