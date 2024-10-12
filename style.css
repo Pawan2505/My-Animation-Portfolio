@@ -147,7 +147,7 @@ a {
   color: rgb(231, 231, 231);
 
   bottom: -12%;
-  left: 1%;
+  left: -12%;
   font-weight: bold;
   transition: all 3s;
 }
@@ -796,7 +796,7 @@ footer {
   }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 810px) {
   .hero-section {
     display: flex;
     flex-direction: column-reverse;
